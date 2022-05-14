@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .active{
+            background-color: aliceblue;
+            color: blue;
+        }
+    </style>
+    <title>Sidebar Tailwind</title>
+  </head>
+  <body>
+    <!-- SIDEBAR NAVIGATION -->
+    <div id="sidebar-section" class="h-screen fixed">
+      <div
+        id="sidebar"
+        class="fixed h-screen top-0 left-0 bg-slate-800 w-20 hover:w-72 duration-200"
+      >
+        <nav role="navigation" class="pl-4 pt-8 mt-4">
+          <div class="mt-4 relative overflow-hidden">
+            <h1 class="name text-white fixed top-0 left-0 text-lg">Tutorend</h1>
+
+            <ul class="nav-list space-y-8" id="nav-list">
+
+              <li
+                class="nav-item text-xl active p-2 rounded-l-xl text-white "
+              >
+                <a href="#home" class="flex gap-5">
+                  <i class="fa-solid fa-house fa-2x"></i>
+                  Home
+                </a>
+              </li>
+              <li
+                class="nav-item text-xl  p-2 rounded-l-xl text-white "
+              >
+                <a href="#about" class="flex gap-5">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  About
+                </a>
+              </li>
+              <li
+                class="nav-item text-xl  p-2 rounded-l-xl text-white "
+              >
+                <a href="#service" class="flex gap-5">
+                    <i class="fa-solid fa-toolbox fa-2x"></i>
+                  Service
+                </a>
+              </li>
+              <li
+                class="nav-item text-xl  p-2 rounded-l-xl text-white "
+              >
+                <a href="#contact" class="flex gap-5">
+                    <i class="fa-solid fa-at fa-2x"></i>
+                  Contact
+                </a>
+              </li>
+
+
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <div id="content" class="md:ml-24">
+
+    <div id="home" class="bg-red-400 h-screen flex justify-center">
+        <h1 class="m-auto text-4xl">Home</h1>
+    </div>
+
+    <div id="about" class="bg-blue-400 h-screen flex justify-center">
+        <h1 class="m-auto text-4xl">about</h1>
+    </div>
+
+    <div id="service" class="bg-yellow-400 h-screen flex justify-center">
+        <h1 class="m-auto text-4xl">service</h1>
+    </div>
+
+    <div id="contact" class="bg-pink-400 h-screen flex justify-center">
+        <h1 class="m-auto text-4xl">contact</h1>
+    </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
